@@ -14,7 +14,7 @@ const Customers = () => {
         // eslint-disable-next-line
     }, [])
 
-    let options;
+    let options = {};
 
     if(distribution){
         options = {
@@ -49,7 +49,7 @@ const Customers = () => {
 
 
     if(loading){
-        return <h3>Loading...</h3>
+        return <h3 className='center'>Loading...</h3>
     }
 
     return (
