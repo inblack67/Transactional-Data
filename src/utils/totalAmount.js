@@ -5,12 +5,4 @@ export default (customers) => {
         }
         return acc;
     }, 0)
-    // let sum = 0;
-    // customers.forEach(customer => {
-    //     if(customer.Amount){
-    //         console.log(customer.Amount);
-    //         sum += customer.Amount;
-    //     }
-    // })
-    // return sum
 }

@@ -20,7 +20,7 @@ const CustomerState = (props) => {
         try {
             const res = await fetch('./customers.txt')
             const custs = await res.text();
-            const parsedResponse = parse(custs, {
+            const parsedResponse = parse(custs.trim(), {
                 delimiter: ",",
                 header: true,
                 dynamicTyping: true,
